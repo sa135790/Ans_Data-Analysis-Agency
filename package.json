@@ -1,0 +1,15 @@
+{
+  "name": "mean_stack_alision",
+  "version": "1.0.0",
+  "description": "Primary level for mean stack developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "stack"
+  ],
+  "author": "Md. Asadujjaman noor",
+  "license": "ISC"
+}
