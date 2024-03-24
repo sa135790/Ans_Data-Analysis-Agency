@@ -1,10 +1,30 @@
-<!-- Provider Edit Section -->
-<section class="page-section" id="provider-details">
+<!-- Provider Details Section -->
+
+<section class="page-section" id="providers-details">
   <div class="container">
     <h2 class="text-center mt-0">{{company.company_name}}</h2>
     <hr class="divider my-4">
+
+    <div class="row my-4">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="card-text">Description Text</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tag Line</h5>
+            <p class="card-text">Tag Line Text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="table-responsive">
-      <a class="btn btn-primary my-2" href="/providers/add-provider/">Add New Provider</a>
       <table class="table table-hover table-bordered">
         <thead class="thead-light">
           <tr>
@@ -13,27 +33,31 @@
             <th scope="col">Address2</th>
             <th scope="col">City</th>
             <th scope="col">State</th>
-            <th scope="col">Postal_code</th>
+            <th scope="col">Zip Code</th>
             <th scope="col">Phone</th>
           </tr>
         </thead>
         <tbody>
-         
           <tr>
             
-            <td scope="row">{{id}}</td>
-            <td scope="row">{{company.address}}</td>
-            <td scope="row">{{company.address2}}</td>
-            <td scope="row">{{company.city}}</td>
-            <td scope="row">{{company.state}}</td>
-            <td scope="row">{{company.postal_code}}</td>
-            <td scope="row">{{company.phone}}</td>
-          
-        </tr>
-              
+           <td scope='row'>{{id}}</td>
+           <td scope='row'>{{company.address}}</td>
+           <td scope='row'>{{company.address2}}</td>
+           <td scope='row'>{{company.city}}</td>
+           <td scope='row'>{{company.state}}</td>
+           <td scope='row'>{{company.postal_code}}</td>
+           <td scope='row'>{{company.phone}}</td>
+
+           
+
+          </tr>
         </tbody>
       </table>
     </div>
-    <a href="/providers/edit/{{id}}" class="btn btn-secondary btn-sm">Edit</a>
+    <div class="row my-4">
+      <div class="col-sm-12 text-center">
+         <a href="/providers/edit/{{id}}" class="btn btn-secondary btn-sm">Edit Providers</a>
+      </div>
+    </div>
   </div>
 </section>
